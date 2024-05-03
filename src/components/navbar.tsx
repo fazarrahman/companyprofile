@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import DropDownMenu from "./drop-down-menu";
+import Carousel from "./ui/carousel";
 
 const Navbar = () => {
     const [isDropDownVisible, setIsDropDownVisible] = useState(false);

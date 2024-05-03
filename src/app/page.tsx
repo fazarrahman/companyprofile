@@ -1,10 +1,11 @@
 import Navbar from "@/components/navbar";
+import Carousel from "@/components/ui/carousel";
 import { Spotlight } from "@/components/ui/spotlight";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Navbar />
       <Spotlight
         className="hidden md:flex left-80"
@@ -17,15 +18,16 @@ export default function Home() {
           Create, grow, and<br />scale your business
         </div>
         <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
-          Custom tailored solutions for your business. We are a team of creatives 
+          Custom tailored solutions for your business. We are a team of creatives
           who are excited to help you grow your business.
         </p>
-        <Link 
+        <Link
           href="/contact"
           className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2 
           mx-auto my-6 text-white">
-            Contact
+          Contact
         </Link>
+        <Carousel />
       </div>
     </div>
   );
