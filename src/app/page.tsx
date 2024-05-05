@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import RecentPost from "@/components/recentpost";
 import Carousel from "@/components/ui/carousel";
 import { Spotlight } from "@/components/ui/spotlight";
 import Link from "next/link";
@@ -28,6 +29,7 @@ export default function Home() {
           Contact
         </Link>
         <Carousel />
+        <RecentPost />
       </div>
     </div>
   );
