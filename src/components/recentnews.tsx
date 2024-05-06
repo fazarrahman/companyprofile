@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import NewsCards from "./ui/newscards";
 
-const RecentPost = () => {
+const RecentNews = () => {
     //const [recentNews, setRecentNews] = useState();
     const news = [
         { id: 1, title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", url: "/news1", ImageUrl:"/images/carousel/wallhaven-3lepy9.jpg", ImageAlt:"image 1", publishedDate: "2024-05-05" },
@@ -14,18 +14,18 @@ const RecentPost = () => {
     ];
     //setRecentNews(news);
     return (
-        <section className="w-full mt-32 px-48 flex flex-col items-center justify-center">
+        <section className="section">
             <div className="flex w-full justify-between">
                 <h2 className="inline-block font-bold capitalize text-3xl">
                     Recent News
                 </h2>
                 <Link href="/recent-news"
                     className="inline-block font-medium 
-                    hover:underline hover:underline-offset-2 text-md hover:text-orange-500">view all</Link>
+                    text-md link-text">view all</Link>
             </div>                
             <NewsCards news={news} />
         </section>
     );
 }
 
-export default RecentPost;
+export default RecentNews;

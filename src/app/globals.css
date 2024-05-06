@@ -73,4 +73,25 @@
     body {
       @apply bg-background text-foreground text-neutral-300;
     }
+    .link-text {
+      @apply  hover:text-orange-500 hover:underline hover:underline-offset-2
+    }
+    .section {
+      @apply w-full mt-32 px-48 flex flex-col items-center justify-center
+    }
+    .section-title {
+      @apply text-4xl pb-5 md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50 mt-20
+    }
+    .card-group {
+      @apply mt-10 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8
+    }
+    .card {
+      @apply max-w-sm p-6 bg-black border border-gray-400 rounded-lg shadow-lg shadow-gray-400 dark:bg-gray-800 dark:border-gray-700
+    }
+    .card-title {
+      @apply mb-2 text-2xl font-semibold tracking-tight
+    }
+    .card-text {
+      @apply mb-3 font-normal
+    }
   }
